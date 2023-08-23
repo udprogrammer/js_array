@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const employee = [
+        {
+          name: "uday",
+          age: 18,
+          mobile: 123456,
+          salary: 55000,
+        },
+        {
+          name: "Rohan",
+          age: 21,
+          mobile: 789456,
+          salary: 45000,
+        },
+        {
+          name: "Durga",
+          age: 22,
+          mobile: 124578,
+          salary: 54000,
+        },
+        {
+          name: "Suhani",
+          age: 19,
+          mobile: 785623,
+          salary: 15000,
+        },
+        {
+          name: "Mohan",
+          age: 23,
+          gender: "male",
+          salary: 12000,
+        },
+        {
+          name: "Mohini",
+          age: 21,
+          gender: "female",
+          salary: 51500,
+        },
+      ];
+
+      let user = employee.filter((data, index) => {
+        if (data.salary >= 50000) {
+          console.log(data.name);
+        }
+      });
+      console.log(user);
+    </script>
+  </body>
+</html>
